@@ -23,7 +23,7 @@
 				Your goal is to reach the end of the ride, dodging all the obstacles (jumping or changing the runway)
 			</p>	
 			<form action="#" method="post" >
-				<button type="submit" class='btn btn-start' id="startButton" onclick="start.remove(); return false;">START</button>
+				<button type="submit" class='btn btn-start' id="startButton" onclick="myMove()">START</button>
 			</form>
 		</div>
 	</div><!-- END START -->
@@ -41,7 +41,7 @@
 				<p>You can visit again pressing the Restart Button!</p>
 			</div>
 			<form action="#" method="post" >
-				<button type="submit" class='btn btn-start' id="restartButton" onclick="end.remove(); return false;">RESTART</button>
+				<button type="submit" class='btn btn-start' id="restartButton" onclick="myMove()">RESTART</button>
 			</form>
 		</div>
 	</div><!-- END END -->
@@ -110,6 +110,7 @@
 			<!-- RUNNER -->
 			<div id="runner">
 				<img src="imgs/runner.svg" alt="runner">
+				
 			</div><!-- END RUNNER -->
 
 			<!-- RUNWAYS -->
@@ -132,6 +133,6 @@
 	
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src='js/script.js'></script>
-
+	
 </body>
 </html>
