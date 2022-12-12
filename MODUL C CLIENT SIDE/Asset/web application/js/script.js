@@ -4,10 +4,11 @@ function myMove() {
     let id = null;
     const elem = document.getElementById("runner");   
     let pos = 0;
+    let up = 100;
     clearInterval(id);
     id = setInterval(frame, 5);
     function frame() {
-      if (pos == 350) {
+      if (pos == 4700) {
         clearInterval(id);
       } else {
         pos++; 
@@ -17,12 +18,12 @@ function myMove() {
           // left arrow key
           if (e.which === 38) {
             keydown = true;
-            elem.style.top = (pos-10) + "px"; 
+            elem.style.bottom = (up + 25) + "px"; 
           }
           // right arrow key
           else if (e.which === 40) {
             keydown = true;
-            elem.style.top = (pos+10) + "px"; 
+            elem.style.bottom = (up - 25) + "px"; 
           }
         });
       }
